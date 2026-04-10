@@ -1,17 +1,31 @@
 *:required
 []: optional
 Commands available :
-
-~help [command name] :
+~help
+help [command name]:
     -if no command was written, shows the entire manual.
     -if one single command name, shows the part of manual dedicated to the command written.
-~exit : stops the interpreter from working.
-~cd <*RepName> : changes current repository.
-
-
-~ls [-l ]
-~pwd : shows current position.
-~date: shows current date.
-~touch: create a text file with the name.
-~mkdir <*RepName> : creates a repository with the name.
-~rmdir <*RepName> : deletes the file and its content.
+~exit
+exit:
+    -stops the interpreter from working.
+~cd
+cd <*DirName> :
+    -changes current directory.
+~ls:
+ls [options: -l | ] [RepName] :
+    -shows whats in a given directory (current directory if none mentionned)
+~pwd
+pwd: 
+    -shows current position.
+~date
+date:
+    -shows current date.
+~touch
+touch:
+    -create a text file with the name.
+~mkdir 
+mkdir <*DirName> :
+    -creates a directory with the name.
+~rmdir
+rmdir <*DirName> :
+    -deletes the file and its content.
