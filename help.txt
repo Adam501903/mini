@@ -23,6 +23,9 @@ date:
 ~touch
 touch:
     -create a text file with the name.
+~rm
+rm :
+    -deletes the text file.
 ~mkdir 
 mkdir <*DirName> :
     -creates a directory with the name.
